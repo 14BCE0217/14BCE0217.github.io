@@ -1,124 +1,178 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-        <title>W3.CSS Template</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="C:\Java-Training\TradeFinance\Chart.js"></script>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="C:\Java-Training\TradeFinance\Chart.js"></script>
 </head>
 
-<body>
-      
-        <div class="container-fluid" style="background-color: darkslateblue">
-           
-            <div class="row" style="background-color: darkslateblue;color: aliceblue">   
+<body style="background-color: darkslateblue" >
 
-                <div class="col-sm-12">     
+    <div class="container-fluid" >
+
+        <div class="row" style="background-color: darkslateblue;color: aliceblue">
+
+            <div class="col-sm-12">
                 <h2 class="card-title" style="text-align: center">Trade Finance dashboard</h4>
-                 </div>
-                    
             </div>
-    
-             <div class="row">
-            <!-- Column -->
-            <div class="col-sm-6" >
-                <div style = "padding-right:50px;margin-top:10px; border: solid; border-radius: 20px ; background-color: aqua">
-                    <h2 style = "padding-left: 15px">Letter of Credit: LC1</h2>
-                <div class="card">
-                    <div class="card-block" style = "padding-left: 20px">
-                        <h4 class="card-title">Active LC no.: 28764349</h4>
-                        <h5>Name: Saundarya</h5>
-                        <h5>Credit amount: Rs.20,05,000</h5>
-                        <h5>Date Of Expiry: 12/12/2018</h5>
-                        <div class="text-right">
-                            <h2 class="font-light m-b-0"><i class="ti-arrow-up text-success"></i> Rs. 20,05,000</h2>
-                            <span class="text-muted">28764349 in progress</span>
-                        </div>
-                        <span class="text-success" style="color: black">70%</span>
-                        <div class="progress" style="background-color: aqua">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 80%; height: 10px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <!-- Column -->
-            <!-- Column -->
-            <div class="col-sm-6"  >
-                    <div style = "padding-right:50px;margin-top:10px; border: solid; border-radius: 20px ; background-color: aqua">   
-                <h2 style = "padding-left: 15px">Letter of Credit: LC2</h2>
-                <div class="card">
-                    <div class="card-block" style = "padding-left: 20px">
-                        <h4 class="card-title">Bank Guarantee no.: 789234</h4>
-                        <h5>Name: Hari</h5>
-                        <h5>Credit Amount: Rs.80,00,000</h5>
-                        <h5>Date Of Expiry: 25/6/2019</h5>
-                        <div class="text-right">
-                            <h2 class="font-light m-b-0"><i class="ti-arrow-up text-info"></i> Rs. 80,00,000</h2>
-                            <span class="text-muted">789234 in progress</span>
-                        </div>
-                        <span class="text-info" style="color: black">30%</span>
-                        <div class="progress" style="background-color: aqua">
-                            <div class="progress-bar bg-info" role="progressbar" style="width: 30%; height: 10px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-            </div>
-            
-            <div class="row">
-             
-            <div class="col-sm-4" style="padding-right:50px;margin-top:10px; border: solid; border-radius: 20px ;margin-left: 15px">
-                <h2 style="text-align:center;color: aliceblue ">Credit Usage Statistics</h2>    
-                <div class="card" >
-                        <div class="card-block" >
-                                <div id="canvas-holder" >
-                                        <canvas id="chart-area" width="150px" height="150px">
-                                 </div>
-                        </div>
-                </div>            
-            </div>      
-        
-            
-            </div>
-            
-    </div>
-<script>
-                            
-                             var doughnutData = [
-                                            {
-                                                value: 200,
-                                                color:"#F7464A",
-                                                highlight: "#FF5A5E",
-                                                label: "LC2"
-                                            },
-                                           
-                                            {
-                                                value: 100,
-                                                color: "#FDB45C",
-                                                highlight: "#FFC870",
-                                                label: "LC1"
-                                            },
-                                            {
-                                                value: 40,
-                                                color: "#949FB1",
-                                                highlight: "#A8B3C5",
-                                                label: "Unused"
-                                            },
-                                        ];
-                            
-                                        window.onload = function(){
-                                            var ctx = document.getElementById("chart-area").getContext("2d");
-                                            window.myDoughnut = new Chart(ctx).Doughnut(doughnutData, {responsive : true});
-                                        };
-                            
-                            
-                            
- </script>
 
- 
-      </body>
-      </html>
+        </div>
+
+        <div class="row">
+            <!-- Column -->
+            <div class="col-sm-6">
+                <div style="padding-right:50px;margin-top:10px; border: solid; border-radius: 20px ; background-color:lavender">
+                    <h2 style="padding-left: 15px">Letter of Credit: LC1</h2>
+                    <div class="card">
+                        <div class="card-block" style="padding-left: 20px">
+                            <h4 class="card-title">Active LC no.: 28764349</h4>
+                            <h5>Name: Saundarya</h5>
+                            <h5>Credit amount: Rs.20,05,000</h5>
+                            <h5>Date Of Expiry: 12/12/2018</h5>
+                            <div class="text-right">
+                                <h2 class="font-light m-b-0">
+                                    <i class="ti-arrow-up text-success"></i> Rs. 20,05,000</h2>
+                                <span class="text-muted">28764349 in progress</span>
+                            </div>
+                            <span class="text-success" style="color: black">70%</span>
+                            <div class="progress" style="background-color: lavender">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 80%; height: 10px;" aria-valuenow="25" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Column -->
+            <!-- Column -->
+            <div class="col-sm-6">
+                <div style="padding-right:50px;margin-top:10px; border: solid; border-radius: 20px ; background-color: lavender">
+                    <h2 style="padding-left: 15px">Letter of Credit: LC2</h2>
+                    <div class="card">
+                        <div class="card-block" style="padding-left: 20px">
+                            <h4 class="card-title">Bank Guarantee no.: 789234</h4>
+                            <h5>Name: Hari</h5>
+                            <h5>Credit Amount: Rs.80,00,000</h5>
+                            <h5>Date Of Expiry: 25/6/2019</h5>
+                            <div class="text-right">
+                                <h2 class="font-light m-b-0">
+                                    <i class="ti-arrow-up text-info"></i> Rs. 80,00,000</h2>
+                                <span class="text-muted">789234 in progress</span>
+                            </div>
+                            <span class="text-info" style="color: black">30%</span>
+                            <div class="progress" style="background-color: lavender">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 30%; height: 10px;" aria-valuenow="25" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div style="padding-right:50px;margin-top:10px; border: solid; border-radius: 20px ;margin-left: 5px; background-color:lavender">
+                    <h2 style="text-align:center;color:black ">Credit Usage Statistics</h2>
+                    <div class="card">
+                        <div class="card-block">
+                            <div id="canvas-holder">
+                                <canvas id="chart-area">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div style="padding-right:50px;margin-top:10px; border: solid; border-radius: 20px ;margin-left: 5px; background-color: lavender">
+                <h2 style="text-align:center;color: black ">Bar Graph</h2>
+                <div class="card">
+                    <div class="card-block">
+                        <canvas id="canvas" style="padding-left:25px;" width=25px; height=25px></canvas>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="background-color: darkslateblue;color: aliceblue">
+
+            <div class="col-sm-12">
+                <div>
+                <h2 class="card-title" style="text-align: center">Some more data
+                    insert here
+                </h4>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+
+          var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
+        
+        var barChartData = {
+            labels : ["January","February","March","April","May","June","July"],
+            datasets : [
+                {
+                    fillColor : "rgba(25,22,220,0.5)",
+                    strokeColor : "rgba(22,22,220,0.8)",
+                    highlightFill: "rgba(22,20,220,0.75)",
+                    highlightStroke: "rgba(22,20,220,1)",
+                    data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+                },
+                {
+                    fillColor : "rgba(85,187,205,0.5)",
+                    strokeColor : "rgba(85,187,205,0.8)",
+                    highlightFill : "rgba(85,187,205,0.75)",
+                    highlightStroke : "rgba(85,187,205,1)",
+                    data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+                }
+            ]
+    
+        }
+
+        var doughnutData = [
+            {
+                value: 200,
+                color: "rgba(25,22,220,0.5)",
+                highlight: "aqua",
+                label: "LC2"
+            },
+
+            {
+                value: 100,
+                color: "turquoise",
+                highlight: "grey",
+                label: "LC1"
+            },
+            {
+                value: 40,
+                color: "#949FB1",
+                highlight: "#A8B3C5",
+                label: "Unused"
+            },
+        ];
+
+        window.onload = function () {
+            var ctx = document.getElementById("chart-area").getContext("2d");
+            window.myDoughnut = new Chart(ctx).Doughnut(doughnutData, { responsive: true });
+            var ctw = document.getElementById("canvas").getContext("2d");
+                window.myBar = new Chart(ctw).Bar(barChartData, {
+                    responsive : true
+        })};
+
+
+
+    </script>
+
+
+</body>
+
+</html>
